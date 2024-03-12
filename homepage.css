@@ -28,6 +28,29 @@ nav ul li.logo {
  color: red;
 }
 
+.btn{
+    font-size: 29px;
+    flex: 4;
+    padding: 0 40px;
+    display: none;
+}
+
+.btn:hover{
+
+}
+
+.wrap{
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        text-align: center;
+        line-height: 42px;
+        border: 1px solid red;
+        border-radius: 5px;
+        margin: 6px 0;
+        cursor: pointer;
+}
+
 nav ul div.nav-name{
     padding: 0 25px;
     display: inline-flex;
@@ -94,5 +117,32 @@ nav ul li.logo {
 
 nav ul div.nav-name{
 flex: 3;
+}
+}
+
+@media screen and (max-width: 672px) {
+.btn{
+    display: block;
+}
+nav {
+    z-index: -1;
+    padding: 9px 40px 9px 0;
+}
+nav ul div.nav-name{
+    z-index: -1;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: red;
+    display: inline-block;
+}
+nav ul div.nav-name li{
+    text-align: center;
+    line-height: 30px;
+    margin: 30px 0;
+}
+nav ul div.nav-name li a{
+    font-size: 19px ;
 }
 }
