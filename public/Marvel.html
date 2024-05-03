@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel = "stylesheet" href="ht.css"></link>
-    <link rel = "stylesheet" href="product.css"></link>
+    <link rel="stylesheet" href="ht.css">
+    <link rel="stylesheet" href="dc.css">
 </head>
-
 <body>
   <nav class="main">
     <nav class="navo">
@@ -38,10 +37,21 @@
     </nav>
   </nav>
 
-<div class="here">
+<div class="sidebar">
+    <h2>Filter</h2>
+    <form id="filterForm">
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price">
+        <button type="submit">Apply</button>
+    </form>
 </div>
+
+<div id="dataContainer"></div>
 <footer>
   <p>University Of Portsmouth project</p>
 </footer>
 </body>
-<script src="product.js"></script>
+
+<script src="marvel.js"></script>
+</body>
+</html>

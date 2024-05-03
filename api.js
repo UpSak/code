@@ -83,6 +83,10 @@ app.get('/dc', async (req, res)=>{
   res.sendFile(path.join(intialPath, "DC.html"))
 })
 
+app.get('/marvel', async (req,res)=>{
+  res.sendFile(path.join(intialPath, "marvel.html"))
+})
+
 
 app.post('/search', async (req, res) => {
   const { search } = req.body;
@@ -188,8 +192,6 @@ const cors = require('cors');
    })
  )
 
-
-
 const apikey = "e66e16b1ecd0e5f943197cede949f2af516a02c4";
 // //const URL = "https://comicvine.gamespot.com/api/";
 //const url = `https://comicvine.gamespot.com/api/characters/?api_key=${apikey}&format=json`;
@@ -233,6 +235,22 @@ app.post('/add', async (req, res) => {
 app.get('/dc-data', async (req, res) => {
   try {
       let dcquery = "SELECT * FROM product WHERE pub = 'DC Comics'";
+      const price = parseFloat(req.query.price);
+      console.log(price);
+      if (!isNaN(price)) {
+          dcquery += ` AND price <= ${price}`;
+      }
+      const { rows } = await pool.query(dcquery);
+      res.json(rows);
+  } catch (error) {
+      console.error('error', error);
+      res.status(500).json({ message: error.message });
+  }
+});
+
+app.get('/marvel-data', async (req, res) => {
+  try {
+      let dcquery = "SELECT * FROM product WHERE pub = 'Marvel Comics'";
       const price = parseFloat(req.query.price);
       console.log(price);
       if (!isNaN(price)) {
