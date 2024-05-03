@@ -1,0 +1,40 @@
+.add {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
+  .add label {
+    font-weight: bold; /* Make labels bold */
+  }
+  
+  .add input[type="text"],
+  .add select,
+  .add textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .add .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .add .currency {
+    margin-right: 5px;
+  }
+  
+  .add button.submit {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add button.submit:hover {
+    background-color: #0056b3;
+  }

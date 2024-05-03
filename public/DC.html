@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ht.css">
+    <link rel="stylesheet" href="dc.css">
+</head>
+<body>
+  <nav class="main">
+    <nav class="navo">
+      <ul>
+        <li class="logo">
+          logo
+        </li>
+        <li class="search">
+          <form action = "/search" method ="post">
+          <input type="text" placeholder="search" name = "search">
+            <button type = "submit" value ="Search" class="icon">search</span>
+        </form>
+        </li>
+        <li class="listingform"> <a href="/add">add product</a></li>
+        <li class="acc"><a href="1"> account</a></li>
+        <li class = "wishlist"><a href = "/wishlist">Wishlist</a></li>
+        <li class="basket"> <a href="/basket">cart</a></li>
+      </ul>
+    </nav>
+    <nav class="nav2">
+      <ul>
+        <div class="nav-name">
+          <li class="home"><a href="/">homepage</a></li>
+          <li><a href="/dc">DC Comics</a></li>
+          <li><a href="1">Marvel Comics</a></li>
+        </div>
+      </ul>
+    </nav>
+  </nav>
+
+<div class="sidebar">
+    <h2>Filter</h2>
+    <form id="filterForm">
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price">
+        <button type="submit">Apply</button>
+    </form>
+</div>
+
+<div id="dataContainer"></div>
+<footer>
+  <p>University Of Portsmouth project</p>
+</footer>
+</body>
+
+<script src="DC.js"></script>
+</body>
+</html>

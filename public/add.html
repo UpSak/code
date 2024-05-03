@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="ht.css"></link>
+    <link rel = "stylesheet" href="add.css"></link>
+</head>
+
+<body>
+  <nav class="main">
+    <nav class="navo">
+      <ul>
+        <li class="logo">
+          logo
+        </li>
+        <li class="search">
+          <form action = "/search" method ="post">
+          <input type="text" placeholder="search" name = "search">
+            <button type = "submit" value ="Search" class="icon">search</span>
+        </form>
+        </li>
+        <li class="listingform"> <a href="/add">add product</a></li>
+        <li class="acc"><a href="1"> account</a></li>
+        <li class = "wishlist"><a href = "/wishlist">Wishlist</a></li>
+        <li class="basket"> <a href="/basket">cart</a></li>
+      </ul>
+    </nav>
+    <nav class="nav2">
+      <ul>
+        <div class="nav-name">
+          <li class="home"><a href="/">homepage</a></li>
+          <li><a href="/dc">DC Comics</a></li>
+          <li><a href="1">Marvel Comics</a></li>
+        </div>
+      </ul>
+    </nav>
+  </nav>
+
+<section class="add" >
+  <div>
+    <label>Comic name</label>
+    <input type="text" class="form-control" name = "comic_name" placeholder="enter comic name" id = "apisearch">
+  </div>
+  <div class="aside">
+    <p>The selected comic is:<span id = "selected"></span></p>
+    <img src="" alt="" id="smg">
+  </div>
+  <div class="result-box"></div>
+
+
+  <form method="post" action="/add">
+    <div><input type ="hidden" name ="cname" id = "hselect"></div>
+    <div><input type ="hidden" name ="image" id = "imgurl"></div>
+    <div>
+      <label for="price">Price</label>
+        <span class="currency">£</span>
+        <input type="text" class="form-control" id="price" name="price">
+    </div>
+    <div>
+      <label>publisher</label>
+      <select class="form-control" name ="pub">
+        <option value="DC Comics">DC Comics</option>
+        <option value="Marvel Comics">Marvel Comic</option>
+      </select>
+    </div>
+    <div>
+      <label>condition</label>
+        <select class="form-control" name ="condition">
+          <option value="">Select Condition</option>
+          <option value ="Mint">Mint</option>
+          <option value ="Near Mint">Near Mint</option>
+          <option value ="Fine">Fine</option>
+          <option value ="Very Good">Very Good</option>
+          <option value ="Good">Good</option>
+          <option value ="Fair">Fair</option>
+          <option value ="Poor">Poor</option>
+      </select>
+  </div>
+    <div class="form-group">
+      <label for="year">Listing description</label>
+      <textarea class="form-control" id="description" name="description"></textarea>
+    </div>
+      <button class="submit" type ="submit" >Post</button>
+  </form>
+</section>
+<footer>
+  <p>University Of Portsmouth project</p>
+</footer>
+<script src="add.js"></script>
+</body>
+</html>

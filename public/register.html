@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="ht.css"></link>
+    <link rel = "stylesheet" href="Loginpage.css"></link>
+</head>
+
+<body>
+  <nav class="main">
+    <nav class="navo">
+      <ul>
+        <li class="logo">
+          logo
+        </li>
+        <li class="search">
+          <form action = "/search" method ="post">
+          <input type="text" placeholder="search" name = "search">
+            <button type = "submit" value ="Search" class="icon">search</span>
+        </form>
+        </li>
+        <li class="listingform"> <a href="/add">add product</a></li>
+        <li class="acc"><a href="1"> account</a></li>
+        <li class = "wishlist"><a href = "/wishlist">Wishlist</a></li>
+        <li class="basket"> <a href="/basket">cart</a></li>
+      </ul>
+    </nav>
+    <nav class="nav2">
+      <ul>
+        <div class="nav-name">
+          <li class="home"><a href="/">homepage</a></li>
+          <li><a href="/dc">DC Comics</a></li>
+          <li><a href="1">Marvel Comics</a></li>
+        </div>
+      </ul>
+    </nav>
+  </nav>
+
+
+<section class="container forms">
+<div class="form signup">
+    <div class="form-content">
+        <header>Signup</header>
+
+        <form action = "/reg" method="POST">
+            <div class="field input-field">
+                <input type ="email" placeholder="Email" class = "input" name="input">
+            </div>
+
+            <div class="field input-field">
+              <input type ="text" placeholder="name" class = "names" id="names" name="names">
+          </div>
+
+            <div class="field input-field">
+                <input type ="password" placeholder="Password" class = "password" id="password" name="password">
+                <i class="bx bx-hide eye-icon">Hide</i>
+            </div>
+
+            <div class="field button-field">
+                <button class="submit" type ="submit" >Signup</button>
+            </div>
+
+            <div class="form-link">
+                <span>Already have an account? <a href="/log" class="link login-link">Login</a> </span>
+            </div>              
+        </form>
+    </div>
+</div>
+</section>
+
+<footer>
+  <p>University Of Portsmouth project</p>
+</footer>
+</body>
+<script src="logreg.js"></script>

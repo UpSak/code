@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100vh;
+}
+
+nav{
+    background: black;
+    padding: 10px 40px 10px 70px;
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+    color: white;
+}
+
+.navo ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+.navo .search {
+    width: 550px;
+}
+
+.navo .search .icon{
+    background: red;
+    border: 1px solid white;
+    
+}
+
+.navo .search input{
+    width: 500px;
+    height: 50px;
+}
+
+.nav2 .nav-name{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ list-style: none;
+
+}
+
+.img{
+    background-image: url(91-ouhLSD4L._SY466_.jpg);
+    height: 62vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.center-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px ;
+    color: white;
+    background: black;
+    border: 1px solid white;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 100%;
+    height: 100px;
+}
